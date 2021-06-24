@@ -2,8 +2,10 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
+	
 		<meta charset="<?php bloginfo('charset'); ?>"/>
 		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<?php wp_head();?>
 	</head>
 	<body <?php body_class();?>>
@@ -14,7 +16,12 @@
 				<p class='text'><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
 				<p class='text'><?php echo get_bloginfo('description', 'display'); ?></p>
 			</div>
-			<a id='sign_in' href="<?php echo wp_login_url(); ?>" rel="home">Вход</a> 
+			<div id="test124">
+				<a id='sign_in' href="<?php echo wp_login_url(); ?>" rel="home">Вход</a> 
+				<?php if (has_nav_menu('primary')) { ?>
+					<button id="ham" class="hamburger material-icons">menu</button>
+				<?php } ?>
+			</div>
 		</div>
 		<?php if (has_nav_menu('primary')) {
 			wp_nav_menu(
@@ -38,7 +45,5 @@
 				)
 			);
 		} ?>
-    </header>
-	<main id="content">
+	</header>
 	
-		

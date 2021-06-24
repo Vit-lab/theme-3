@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<main id="content">
 	<header>
 		<h1>Ничего нет</h1>
 	</header>

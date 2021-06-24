@@ -16,8 +16,8 @@
 				the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
 			}?>
 			<p>test</p>
-			<script type="text/javascript" src="http://localhost/wordpress/wp-content/themes/theme_3/js/test.js" id="wpb_test-js"></script>
 		</footer>
 		<?php wp_footer() ?>
+		<script type="text/javascript" src="http://localhost/wordpress/wp-content/themes/theme_5/js/test2.js" id="wpb_test-js"></script>
 	</body>
 </html>
