@@ -33,6 +33,16 @@ add_filter('excerpt_length', function() {
 	return 20;
 });
 
+
+
+add_filter( 'comment_form_default_fields', function ($fields) {
+	unset( $fields[ 'url' ] );
+	return $fields;
+} );
+ 
+
+
+
 function my_site_title() {
 	if (is_home()) { ?>
 		<h1><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1><?php

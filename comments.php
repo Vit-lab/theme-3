@@ -37,5 +37,9 @@
 			'title_reply' => 'Оставте коментарий',
 			'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
 			'title_reply_after' => '</h2>',
+			'fields' => array (
+				'author' => '<p class="comment-form-author"><input id="author" name="author" type="text" value="" size="30" maxlength="245" placeholder="Введите имя*" required="required"></p>',
+				'email' => '<p class="comment-form-email"><input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" placeholder="Введите email*" required="required"></p>'
+			)
 		)
 	); ?>
