@@ -1,11 +1,10 @@
 <?php ?>
 
 <article class='article-card-page'>
-	<header>
-		<?php the_title('<h1>', '</h1>'); ?>
+	<header class='article-header'>
+		<?php the_title("<h1 class='header-h1'>", '</h1>'); ?>
 	</header>
-	<div>
-	<p>content-single</p>
+	<div class='article-content'>
 		<?php the_content();
 		wp_link_pages(
 			array(
@@ -16,10 +15,5 @@
 		); ?>
 	</div>
 	<footer>
-
-	<?php /* if (comments_open() || get_comments_number()) {
-		comments_template();
-	} */ ?>
-
 	</footer>
 </article>
